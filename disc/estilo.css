@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(7, 5, 22, 0.897);
+}
+
+#container {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+max-width: 900px;
+flex-wrap: wrap;
+z-index: 1;
+}
+
+#container .card {
+
+    position: relative;
+    width: 230px;
+    height: 390px;
+    padding: 2px;
+    margin: 10px;
+    box-shadow: 30px 30px 50px rgba(24, 22, 37, 0.815);
+    border-radius: 15px;
+    background: rgb(119, 119, 119);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-top: 1px solid rgba(255, 255, 255, 05);
+   border-left: 1px solid rgba(255, 255, 255, 05)
+}
+
+
+#container .card .content {
+
+padding: 20px;
+text-align: center;
+transform: translateY(100px);
+opacity: 0;
+transition: 1.0s;
+
+}
+
+
+#container .card:hover .content {
+transform: translateY(0px) ;
+opacity: 1;
+}
+
+#container .card .content h1 {
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.11);
+    pointer-events: none;
+}
+
+#container .card .content h2 {
+font-size: 1.0em;
+color: white;
+z-index: 1;
+}
+
+#container .card .content p {
+
+    font-size: 1.em;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+
+#container .card .content a {
+
+    position: relative;
+display: inline-block;
+padding: 8px 20px;
+margin-top: 15px;
+text-decoration: none;
+background-color: ivory;
+color: black;
+border-radius: 20px;
+font-weight: 500px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.849);
+}
+
+
+
+
